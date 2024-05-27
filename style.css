@@ -1,0 +1,103 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #4a90e2, #87ceeb, #ffffff);
+    background-size: 100vw 100vh;
+}
+
+#foto{
+    margin-top: 15%;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 255, 255);
+    width: 35%;
+    height: auto;
+}
+
+.conteudo{
+    text-align: center;
+}
+
+p{
+    border: 2px solid rgb(255, 255, 255); 
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;  
+    margin: 20px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-right: 5px;
+    box-shadow: 6px 5px 2px 1px rgba(255, 255, 255, 0.5);
+}
+
+.icon{
+    float: right;
+}
+
+input[type="checkbox"]{
+    border: 1px solid black;
+    width: 70px;
+    height: 30px;
+    appearance: none;
+    background-color: #DAE2DF;
+    border-radius: 40px;
+    box-shadow: inset 0px 0px 16px 3px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    transition: 0.4s;
+    position: relative;
+    margin: 20px;
+}
+
+input:checked[type = "checkbox"]{
+    background-color: aquamarine;
+    
+}
+
+input[type="checkbox"]:before{
+    border: 1px solid black;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 35px;
+    position: absolute;
+    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.24);
+    transform: scale(1.1);
+    top: 0;
+    left: 0;
+    transition: .4s;
+    background-image: url(Images/sun.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+input:checked[type="checkbox"]:before{
+    border: 1px solid black;
+    left: 40px;
+    background-image: url(Images/moon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.button {
+    transition: box-shadow 0.5s ease;
+}
+
+.button:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+}
+
+footer{
+    margin-top: 50px;
+}
+
+#nome{
+    margin-top: 20px;
+}
